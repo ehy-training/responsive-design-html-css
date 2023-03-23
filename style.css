@@ -1,0 +1,14 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: orange;
+}
+
+footer {
+    background: darkgrey;
+    min-height: 500px;
+}
