@@ -1,16 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
 
-}
 
-header {
-    background: orange;
-}
+/*---------------------
+RESET
+---------------------*/
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+
 
 main {
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 1.3em;
 }
 
 article {
@@ -25,10 +27,45 @@ h2 {
 }
 
 footer {
-    background: darkgrey;
     min-height: 500px;
 }
 
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+main {
+    font-size: 1.3em;
+}
+
+
+/*---------------------
+COLOR & STYLE
+---------------------*/
+
+header {
+    background: orange;
+}
+
+
+footer {
+    background: darkgrey;
+}
+
+/*---------------------
+COMPONENTS
+---------------------*/
+
+
+
+/*---------------------
+RESPONSIVE (MEDIAQUERIES)
+---------------------*/
 
 @media only screen and (min-width: 600px) {
 
