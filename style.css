@@ -123,7 +123,8 @@ nav.main-nav > ul > li a:hover {
 
 
 nav.mobile-nav {
-
+    padding-top: 70px;
+padding-bottom: 100vh;
 }
 
 nav.mobile-nav ul {
@@ -153,6 +154,16 @@ RESPONSIVE (MEDIAQUERIES)
 ---------------------*/
 
 @media only screen and (min-width: 600px) {
+    
+    
+    nav.main-nav {
+    display: block;
+}
+    
+    nav.mobile-nav,
+    nav.burger-icon {
+    display: none;
+}
 
     p {
         width: 45%;
