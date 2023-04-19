@@ -17,10 +17,19 @@ ul {
 
 img {
     width: 100%;
+    display: block;
 }
 
 
 
+/*
+LAYOUT
+*/
+
+
+section.gallery ul li {
+            padding: 2px;
+}
 
 
 
@@ -30,5 +39,14 @@ RESPONSIVE (MEDIA QUERIES)
 */
 
 @media only screen and (min-width: 600px) {
+    
+    section.gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.gallery ul li {
+        flex-basis: 33.33%;
+    }
     
 }
