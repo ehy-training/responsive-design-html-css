@@ -1,6 +1,6 @@
 /*
 Stylesheet Responsive Design mit HTML5 und CSS3
-Schritt 2
+Schritt 3
 */
 
 /*
@@ -24,17 +24,51 @@ img {
     display: block;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 
 
 /*
 LAYOUT
 */
 
-
-section.gallery ul li {
-            padding: 2px;
+header.main-header,
+nav.main-nav,
+section,
+footer {
+        padding: 1em 20px;
 }
 
+header.main-header > *,
+nav.main-nav > *,
+section > *,
+footer > * {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-bottom: 1em;
+}
+
+
+section.gallery ul li {
+            padding: 1px;
+}
+
+
+nav.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.main-nav ul > li {
+    margin-right: 1em;
+}
 
 
 

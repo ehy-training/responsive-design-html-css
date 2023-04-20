@@ -1,15 +1,6 @@
 <!-- 
 Responsive Design mit HTML5 und CSS3
-Schritt 2
-
-• Viewport Meta Tag im Head eingefügt
-• Stylesheet style.css im Head verlinkt
-• Bilder Gallery als ungeordnete Lsite (UL) angelegt
-• Im Stylesheet einen RESET angelegt
-• Stylesheet imt weiteren Kapitel (LAYOUT, RESPONSIVE) strukturiert
-• Eine MEDIA QUERY für den ersten Breakpoint (600px) angelegt
-• Vorgehensweise ist "Mobile First"
-• Mittels Flexbox UL ELement der Bildergalerie auf DISPLAY: FLEX gesetzt) die Galerie responsiv gemacht, d.h. mehrspaltig ab 600px und einspaltig davor.
+Schritt 3
 -->
 
 <!DOCTYPE html>
@@ -22,10 +13,10 @@ Schritt 2
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <h1>Responsive Design</h1>
     </header>
-    <nav>
+    <nav class="main-nav">
         <ul>
             <li><a href="#">Menüpunkt</a></li>
             <li><a href="#">Menüpunkt</a></li>
@@ -41,26 +32,21 @@ Schritt 2
                     <a href="#"><img src="../assets/img/architecture-1850055_1920.jpeg"></a>
                 </li>
 
-
                 <li>
                     <a href="#"><img src="../assets/img/architecture-1857175_1920.jpg"></a>
                 </li>
-
 
                 <li>
                     <a href="#"><img src="../assets/img/architecture-6517841_1920.jpg"></a>
                 </li>
 
-
                 <li>
                     <a href="#"><img src="../assets/img/arq-2645763.jpeg"></a>
                 </li>
 
-
                 <li>
                     <a href="#"><img src="../assets/img/building-7515153_1920.jpeg"></a>
                 </li>
-
 
                 <li>
                     <a href="#"><img src="../assets/img/building-gc2c0f35e2_1920.jpg"></a>
@@ -71,11 +57,9 @@ Schritt 2
                     <a href="#"><img src="../assets/img/colors-2004497_1920.jpeg"></a>
                 </li>
 
-
                 <li>
                     <a href="#"><img src="../assets/img/skyscrapers-3184798_1920.jpeg"></a>
                 </li>
-
 
                 <li>
                     <a href="#"><img src="../assets/img/stained-glass-1589648_1920.jpg"></a>
@@ -91,7 +75,6 @@ Schritt 2
                     <a href="#"><img src="../assets/img/surface-945444_1920.jpg"></a>
                 </li>
 
-
                 <li>
                     <a href="#"><img src="../assets/img/buildings-205986_1920.jpg"></a>
                 </li>
@@ -105,8 +88,11 @@ Schritt 2
                 <figure></figure>
             </div>
             <div class="section-content">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+                <p>
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
                 <p>
                     Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                 </p>
@@ -117,4 +103,6 @@ Schritt 2
     <footer>
         <p>© 2023 Enno Hyttrek</p>
     </footer>
-</body></html>
+</body>
+
+</html>
