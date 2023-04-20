@@ -41,13 +41,15 @@ footer {
         padding: 1em 20px;
 }
 
+/**
+"Bühnengröße" für die Hauptelemente
+**/
 header.main-header > *,
 nav.main-nav > *,
 section > *,
 footer > * {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 
