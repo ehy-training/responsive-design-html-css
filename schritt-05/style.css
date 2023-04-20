@@ -1,6 +1,6 @@
 /*
 Stylesheet Responsive Design mit HTML5 und CSS3
-Schritt 4
+Schritt 5
 */
 
 /*
@@ -26,6 +26,10 @@ img {
 
 nav a {
     text-decoration: none;
+}
+
+nav.main-nav {
+    display: none;
 }
 
 
@@ -72,6 +76,12 @@ section.gallery ul li {
 Layout Navigation
 **/
 
+nav.burger-icon,
+nav.main-nav {
+    position: sticky;
+    top: 0;
+}
+
 
 nav.main-nav ul {
     display: flex;
@@ -84,6 +94,11 @@ nav.main-nav ul > li {
 
 nav.burger-icon {
 text-align: right;
+}
+
+nav.mobile-nav {
+    height: 100vh;
+    padding-top: 120px;
 }
 
 
@@ -108,6 +123,12 @@ Typografie Navigation
 
 nav.burger-icon {
     font-size: 3em;
+}
+
+
+nav.mobile-nav {
+    font-size: 2em;
+    line-height: 2;
 }
 
 
@@ -155,6 +176,7 @@ aside {
     background: var(--color-mid-grey);
 }
 
+
 /**
 Main Elements Type
 **/
@@ -175,6 +197,15 @@ RESPONSIVE (MEDIA QUERIES)
 */
 
 @media only screen and (min-width: 600px) {
+    
+    nav.main-nav {
+        display: block;
+    }
+    
+    nav.mobile-nav,
+    nav.burger-icon {
+        display: none;
+    }
 
     .main-wrapper {
         display: flex;
