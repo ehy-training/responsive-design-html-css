@@ -1,6 +1,11 @@
 /*
 Stylesheet Responsive Design mit HTML5 und CSS3
 Schritt 2
+
+• Einen RESET angelegt
+• Weiteren Kapitel (LAYOUT, RESPONSIVE) angelegt (wichtig für Ordnung und Übersichtlichkeit)
+• Eine MEDIA QUERY für den ersten Breakpoint (600px) angelegt (Vorgehensweise ist "Mobile First")
+• Mittels Flexbox (UL ELement der Bildergalerie auf DISPLAY: FLEX gesetzt) die Galerie responsiv gemacht, d.h. mehrspaltig ab 600px und einspaltig davor.
 */
 
 /*
