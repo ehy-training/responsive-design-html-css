@@ -29,6 +29,10 @@ img {
     display: block;
 }
 
+p img {
+    display: inline;
+}
+
 
 
 /*

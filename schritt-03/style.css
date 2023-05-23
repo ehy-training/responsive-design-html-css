@@ -89,4 +89,8 @@ RESPONSIVE (MEDIA QUERIES)
         flex-basis: 33.33%;
     }
     
+    section p {
+        max-width: 50em;
+    }
+    
 }
