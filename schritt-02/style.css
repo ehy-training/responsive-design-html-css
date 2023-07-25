@@ -2,31 +2,34 @@
 Stylesheet für Vorführdokumente zur Einführung in Responsive Design mit HTML5 und CSS3.
 Enno Hyttrek
 ehy.training@gmail.com
-Schritt 1:
-- Viewport Meta Tag
-- Media Queries
+Schritt 2:
+- CSS Reset
 */
 
 /*---------------------
 RESET
 ---------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 img {
     width: 100%;
     display: block;
 }
 
-figure {
-        margin: 0;
-}
 
 /*---------------------
 LAYOUT
 ---------------------*/
 
-
-
-
+h1,h2,h3,h4,h5,h6,p {
+    margin-bottom: 1em;
+}
 
 
 header.main-header {
@@ -42,6 +45,14 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+
+
+main > section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 20px;
 }
 
 
@@ -79,26 +90,27 @@ h1 {
 
 
 
+/*---------------------
+RESPONSIVE (MOBILE FIRST)
+---------------------*/
+
+
 @media only screen and (min-width: 600px) {
-    
 
-.gallery figure {
-width: 49%
-}
 
-    
+    .gallery figure {
+        width: 49%
+    }
+
+
 }
 
 
 
 @media only screen and (min-width: 1000px) {
-    
-.gallery figure {
-width: 32%
+
+    .gallery figure {
+        width: 32%
+    }
+
 }
-    
-}
-
-
-
-
