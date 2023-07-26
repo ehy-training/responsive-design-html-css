@@ -1,0 +1,224 @@
+/*
+Stylesheet für Vorführdokumente zur Einführung in Responsive Design mit HTML5 und CSS3.
+Enno Hyttrek
+ehy.training@gmail.com
+Schritt 3:
+
+*/
+
+/*---------------------
+RESET
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+/**--------
+Layout Variables
+--------**/
+
+:root {
+    --gallery-gap: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1em;
+}
+
+
+header.main-header {
+    min-height: 30vw;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header.main-header .container,
+nav.main-nav > ul,
+main > section,
+footer.main-footer > * {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 20px;
+}
+
+main > section {
+    padding-top: 3em;
+}
+
+section header {
+    margin-bottom: 1em;
+}
+
+footer.main-footer {
+    min-height: 20vh;
+}
+
+.gallery figure {
+    padding-bottom: var(--gallery-gap);
+}
+
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+nav.main-nav {
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav.main-nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    color: hsl(200, 42%, 13%);
+    font-weight: 600;
+}
+
+nav.main-nav a:hover {
+    color: hsl(30, 97%, 55%);
+}
+
+
+
+
+
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+body {
+    font-family: "inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+
+footer.main-footer {
+    font-size: 0.8em;
+}
+
+
+/*---------------------
+STYLE
+---------------------*/
+
+.main-header {
+    background-image: url(../assets/img/colors-2004497_1920.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.main-header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: hsla(200, 42%, 13%, 0.5);
+
+}
+
+.main-header .container {
+    position: absolute;
+    z-index: 1;
+}
+
+/*---------------------
+COLOR
+---------------------*/
+
+h1 {
+    color: #fff;
+}
+
+body {
+    background: hsl(200, 42%, 13%);
+}
+
+.top-wrapper {
+    background: #fff;
+}
+
+footer.main-footer {
+    color: hsl(200,8%,94%);
+}
+
+
+/*---------------------
+RESPONSIVE (MOBILE FIRST)
+---------------------*/
+
+
+@media only screen and (min-width: 600px) {
+
+
+    .gallery figure {
+        width: 50%
+    }
+    
+    .gallery figure:nth-child(odd) {
+        padding-right: var(--gallery-gap);
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    .gallery figure {
+        width: 33.33%;
+                    padding-right: var(--gallery-gap);
+    }
+    
+        .gallery figure:nth-child(3n+3) {
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .main-header .container {
+        left: calc((100vw - 1200px) / 2);
+    }
+
+}
