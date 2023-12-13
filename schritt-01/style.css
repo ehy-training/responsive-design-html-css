@@ -1,0 +1,22 @@
+/*
+RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*
+LAYOUT
+*/
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin-bottom: 1em;
+}
