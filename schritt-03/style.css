@@ -1,5 +1,5 @@
 /*
-Stylesheet Schritt 2
+Stylesheet Schritt 3
 */
 
 
@@ -46,8 +46,7 @@ ul {
 }
 
 .gallery li {
-    padding-right: 1px;
-    padding-bottom: 1px;
+    padding: 3px;
 }
 
 .columns-faux,
@@ -66,10 +65,31 @@ ul {
     margin: -2px
 }
 
+h1 {
+    padding: 10px;
+}
+
 
 /*
 COLOR
 */
+
+.green {
+    background: hsl(100, 55%, 55%);
+}
+
+.blue {
+    background: hsl(200, 55%, 55%);
+}
+
+.purple {
+    background: hsl(300, 55%, 89%);
+}
+
+h1 {
+    background: red;
+}
+
 
 
 /*
