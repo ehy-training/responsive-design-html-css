@@ -41,18 +41,46 @@ ul {
     padding: 20px 1em;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
+.gallery ul {
     list-style-type: none;
 }
 
+.gallery li {
+    padding: 3px;
+}
 
+.columns-faux,
+.gallery-flex ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-inline {
+    line-height: 0;
+}
+
+.gallery-inline li {
+    display: inline-block;
+    vertical-align: top;
+    margin: -2px
+}
 
 
 /*
 COLOR
 */
+
+.green {
+    background: hsl(100, 55%, 55%);
+}
+
+.blue {
+    background: hsl(200, 55%, 55%);
+}
+
+.purple {
+    background: hsl(300, 55%, 89%);
+}
 
 
 
@@ -62,9 +90,24 @@ RESPONSIVE
 
 @media only screen and (min-width: 580px) {
 
+    .columns-true {
+        column-count: 2;
+    }
+
+    .columns-faux p {
+        padding-right: 1em;
+    }
+
+    .columns-faux p,
     li {
         width: 50%;
     }
+
+/*
+    .gallery-inline li {
+        width: 49%;
+    }
+*/
 }
 
 
@@ -73,10 +116,22 @@ RESPONSIVE
 
 @media only screen and (min-width: 900px) {
 
+    .columns-true {
+        column-count: 3;
+    }
 
+
+    .columns-faux p,
     li {
         width: 33.33%;
     }
+
+
+/*
+    .gallery-inline li {
+        width: 33%;
+    }
+*/
 }
 
 
@@ -84,9 +139,15 @@ RESPONSIVE
 
 
 @media only screen and (min-width: 1200px) {
-    
-        li {
+
+    li {
         width: 25%;
     }
-    
+
+/*
+    .gallery-inline li {
+        width: 24.7%;
+    }
+*/
+
 }
