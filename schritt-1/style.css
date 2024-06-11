@@ -19,6 +19,10 @@ img {
     display: block;
 }
 
+.gallery ul {
+    list-style-type: none;
+}
+
 
 /*
 LAYOUT
@@ -29,6 +33,12 @@ LAYOUT
     padding: 2rem 20px;
 }
 
+.gallery li {
+    padding: 5px;
+}
+
+
+
 /*
 COLOR
 */
@@ -38,7 +48,25 @@ RESPONSIVE
 */
 
 @media only screen and (min-width: 580px) {
+    
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.gallery li {
+    width: 50%;
+}
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .gallery li {
+    width: 33.33%;
+}
+    
 }
 
 
