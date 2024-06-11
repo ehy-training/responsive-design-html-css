@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="viewport">
+    <title>Responsive Design Basics | Test</title>
+
+
+    <style>
+        /*
+        RESET
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0.5em;
+        }
+
+        section {
+            padding: 3em 20px;
+        }
+
+        section>div {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 1em 0;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .buttons {
+            margin: 1em 0;
+        }
+
+        .buttons button {
+            margin: 0 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Responsive Design Basics, Test</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>Ich bin 100px breit und hoch!</p>
+            </div>
+        </section>
+        <div class="buttons">
+            <button onclick="changeViewport('width=device-width, initial-scale=1')">Default</button>
+            <button onclick="changeViewport('width=device-width, initial-scale=2')">Initial Scale 2</button>
+            <button onclick="changeViewport('width=device-width, initial-scale=1, maximum-scale=1')">Max Scale 1</button>
+            <button onclick="changeViewport('width=device-width, initial-scale=1, user-scalable=no')">No Scaling</button>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Enno Hyttrek</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeViewport(content) {
+            document.getElementById('viewport').setAttribute('content', content);
+        }
+    </script>
+
+</body></html>

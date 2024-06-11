@@ -1,0 +1,40 @@
+/*
+Stylesheet Responsive Design Basics
+© 2024 Enno Hyttrek
+*/
+
+
+/*
+RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/*
+LAYOUT
+*/
+
+/*
+COLOR
+*/
+
+/*
+RESPONSIVE
+*/
+
+@media only screen and (min-width: 580px) {
+
+}
+
+
+
