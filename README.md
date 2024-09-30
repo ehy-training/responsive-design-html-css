@@ -7,6 +7,6 @@ Dieses Repository enthält die begleitenden hands-on Code-Elemente und Dateien z
 Es wird zu Beginn der Vorlesungsreihe zurückgesetzt und dann im Laufe der Veranstaltungen wieder sukzessive mit den Dateien gefüllt, die im Laufe der Vorlesungen und Vorführungen durch den Dozenten erstellt werden. 
 
 Enno Hyttrek,
-Juni 2024
+September 2024
 
 ehy.training@gmail.com
