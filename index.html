@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<!--Schritt 1-->
+<!--Schritt 2-->
 <html>
 <head>
     <title>Responsive Design mit HTML5 und CSS3</title>
+
+    <style>
+        /*
+        RESET
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /*
+        LAYOUT
+        */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-bottom: 1rem;
+        }
+
+
+
+        nav > ul,
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*
+        COLOR & STYLE
+        */
+
+        body {
+            background: hsl(200, 21%, 13%);
+        }
+
+        header {
+            background: hsl(200, 21%, 55%);
+        }
+
+        nav {
+            background: #fff;
+        }
+
+        main {
+            background: hsl(200, 5%, 97%);
+        }
+
+        header,
+        footer {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Responsive Design mit HTML5 und CSS3</h1>
+        <div class="container">
+            <h1>Responsive Design mit HTML5 und CSS3</h1>
+        </div>
     </header>
 
     <nav>
@@ -21,25 +83,28 @@
     </nav>
 
     <main>
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        </p>
-        <p>
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        </p>
-        <p>
-            Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        </p>
-        <p>
-            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-        </p>
-
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            </p>
+            <p>
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            </p>
+            <p>
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+            </p>
+        </div>
     </main>
 
     <footer>
-        <p>
-            © 2024 Enno Hyttrek
-        </p>
+        <div class="container">
+            <p>
+                © 2024 Enno Hyttrek
+            </p>
+        </div>
     </footer>
 
 </body></html>
