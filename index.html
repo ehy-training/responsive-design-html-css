@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<!--Schritt 2-->
+<!--Schritt 3-->
 <html>
 <head>
     <title>Responsive Design mit HTML5 und CSS3</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
     <style>
         /*
         RESET
@@ -32,11 +33,24 @@
 
 
 
-        nav > ul,
+        nav>ul,
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
+        
+        
+        /*
+        NAVIGATION
+        */
+        
+        .nav-bar > ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap:1em;
+        }
+        
 
         /*
         COLOR & STYLE
@@ -62,6 +76,13 @@
         footer {
             color: #fff;
         }
+        
+        
+        
+        
+        @media only screen and (min-width: 580px) {
+
+        }
     </style>
 </head>
 
@@ -73,7 +94,7 @@
         </div>
     </header>
 
-    <nav>
+    <nav id="main-nav" class="main-nav nav-bar">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -81,6 +102,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+
 
     <main>
         <div class="container">
@@ -105,6 +128,14 @@
                 © 2024 Enno Hyttrek
             </p>
         </div>
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </body></html>
