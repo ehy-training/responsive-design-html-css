@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--Schritt 3-->
+<!--Schritt 4-->
 <html>
 <head>
     <title>Responsive Design mit HTML5 und CSS3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <style>
         /*
         RESET
@@ -14,6 +14,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        nav.main-nav {
+            display: none;
+        }
+        
+        nav a {
+            text-decoration: none;
         }
 
 
@@ -39,18 +47,60 @@
             margin: 0 auto;
         }
         
-        
+        header {
+            padding-top: 55px;
+        }
+
+        main {
+            min-height: 200vh
+        }
+
+        footer {
+            min-height: 30vh;
+        }
+
+        nav.mobile-nav {
+            height: 100vh;
+            padding-top: 55px;
+        }
+
+
         /*
         NAVIGATION
         */
         
-        .nav-bar > ul {
-            list-style-type: none;
+        nav a {
+                      color: #fff;  
+        }
+
+        nav.burger-icon {
+            position: fixed;
+            top: 0;
             display: flex;
-            flex-wrap: wrap;
-            grid-gap:1em;
+            width: 100%;
+            background: hsla(200, 21%, 13%, 0.8);
+        }
+
+
+        nav.burger-icon div {
+            width: 48px;
+            height: 48px;
         }
         
+        nav.burger-icon a.mobile-nav-open div {
+                        background: green;
+        }
+        
+        nav.burger-icon a.mobile-nav-close div {
+            background: red;
+        }
+        
+        
+        nav.mobile-nav a {
+            font-size: 2em
+        }
+
+
 
         /*
         COLOR & STYLE
@@ -64,9 +114,7 @@
             background: hsl(200, 21%, 55%);
         }
 
-        nav {
-            background: #fff;
-        }
+        nav {}
 
         main {
             background: hsl(200, 5%, 97%);
@@ -76,11 +124,32 @@
         footer {
             color: #fff;
         }
-        
-        
-        
-        
+
+        /*
+        RESPONSIVE (MOBILE FIRST)
+        */
+
+        /*
+Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweise: Mobile First.
+        */
         @media only screen and (min-width: 580px) {
+
+            nav.main-nav {
+                display: block;
+            }
+
+            nav.burger-icon,
+            nav.mobile-nav {
+                display: none;
+            }
+
+
+            .nav-bar>ul {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 1em;
+            }
 
         }
     </style>
@@ -93,6 +162,15 @@
             <h1>Responsive Design mit HTML5 und CSS3</h1>
         </div>
     </header>
+
+    <nav class="burger-icon">
+        <a href="#mobile-nav" class="mobile-nav-open">
+            <div></div>
+        </a>
+        <a href="#" class="mobile-nav-close">
+            <div></div>
+        </a>
+    </nav>
 
     <nav id="main-nav" class="main-nav nav-bar">
         <ul>
@@ -128,14 +206,15 @@
                 © 2024 Enno Hyttrek
             </p>
         </div>
-        <nav id="mobile-nav" class="mobile-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </footer>
+
+    <nav id="mobile-nav" class="mobile-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
 </body></html>
