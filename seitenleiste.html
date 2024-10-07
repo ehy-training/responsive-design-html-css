@@ -2,7 +2,7 @@
 <!--Schritt 6-->
 <html>
 <head>
-    <title>Responsive Design mit HTML5 und CSS3</title>
+    <title>Layout mit Seitenleiste</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,7 @@
 
     <header>
         <div class="container">
-            <h1>Responsive Design mit HTML5 und CSS3</h1>
+            <h1>Layout mit Seitenleiste</h1>
         </div>
     </header>
 
@@ -26,8 +26,8 @@
 
     <nav id="main-nav" class="main-nav nav-bar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="seitenleiste.html">Seitenleiste</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Seitenleiste</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -36,7 +36,8 @@
 
 
     <main>
-        <div class="container faux-columns">
+        <div class="container has-sidebar">
+           <section>
             <p>
                 Absatz 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
@@ -62,6 +63,12 @@
             <p>
                 Absatz 4. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
             </p>
+            </section>
+            
+            <aside>
+               <h3>Die Seitenleiste</h3>
+                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            </aside>
         </div>
     </main>
 

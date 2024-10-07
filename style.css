@@ -1,3 +1,9 @@
+/*
+Hauptstylesheet
+Schritt 6
+*/       
+
+
         /*
         RESET
         */
@@ -16,6 +22,10 @@
             text-decoration: none;
         }
 
+        img {
+            width: 100%;
+        }
+
 
         /*
         LAYOUT
@@ -27,7 +37,8 @@
         h4,
         h5,
         h6,
-        p {
+        p,
+        figure {
             margin-bottom: 1rem;
         }
 
@@ -45,7 +56,7 @@
         }
 
         main {
-            min-height: 200vh
+            min-height: 70vh
         }
 
         footer {
@@ -56,6 +67,10 @@
             height: 100vh;
             padding-top: 55px;
         }
+
+aside {
+                    padding: 0.5em;
+}
 
 
         /*
@@ -119,9 +134,14 @@
         }
 
         header,
+aside,
         footer {
             color: #fff;
         }
+
+aside {
+ background: hsl(200, 21%, 55%);   
+}
 
         /*
         RESPONSIVE (MOBILE FIRST)
@@ -147,6 +167,54 @@ Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweis
                 display: flex;
                 flex-wrap: wrap;
                 grid-gap: 1em;
+            }
+
+            .faux-columns {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .faux-columns > * {
+                width: 50%;
+                padding-right: 16px;
+            }
+
+            .has-sidebar {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .has-sidebar > section {
+                width: 70%;
+                padding-right: 16px;
+            }
+
+            .has-sidebar > aside {
+                width: 30%;
+            }
+
+        }
+
+
+
+        @media only screen and (min-width: 960px) {
+            .faux-columns > * {
+                width: 33.33%;
+            }
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .faux-columns > * {
+                width: 25%;
+            }
+            
+                        .has-sidebar > section {
+                width: 80%;
+            }
+
+            .has-sidebar > aside {
+                width: 20%;
             }
 
         }
