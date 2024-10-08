@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<!--Schritt 6-->
+<!--Schritt 7-->
 <html>
 
 <head>
     <title>Responsive Design mit HTML5 und CSS3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
 </head>
 
 <body>
+
+    <nav class="burger-icon">
+        <a href="#mobile-nav" class="mobile-nav-open">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
 
     <header>
         <div class="container">
             <h1>Responsive Design mit HTML5 und CSS3</h1>
         </div>
     </header>
-
-    <nav class="burger-icon">
-        <a href="#mobile-nav" class="mobile-nav-open">
-            <div></div>
-        </a>
-        <a href="#" class="mobile-nav-close">
-            <div></div>
-        </a>
-    </nav>
 
     <nav id="main-nav" class="main-nav nav-bar">
         <ul>
@@ -74,6 +72,13 @@
         </div>
     </footer>
 
+    <nav id="mobile-nav" class="burger-icon">
+
+        <a href="#" class="mobile-nav-close">
+            <i class="fas fa-times"></i>
+        </a>
+    </nav>
+
     <nav id="mobile-nav" class="mobile-nav">
         <ul>
             <li><a href="#">Home</a></li>
@@ -83,6 +88,4 @@
         </ul>
     </nav>
 
-</body>
-
-</html>
+</body></html>
