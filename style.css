@@ -1,229 +1,306 @@
 /*
 Hauptstylesheet
-Schritt 7
-*/       
+Schritt 8
+*/
 
 
-        /*
+/*
         RESET
         */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        nav.main-nav {
-            display: none;
-        }
+nav.main-nav {
+    display: none;
+}
 
-        nav a {
-            text-decoration: none;
-        }
+nav a {
+    text-decoration: none;
+}
 
-        img {
-            width: 100%;
-        }
-
-
-
-
-        /*
-        LAYOUT
-        */
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        figure {
-            margin-bottom: 1rem;
-        }
+img {
+    width: 100%;
+}
 
 
 
-        nav > ul,
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1em 20px;
-        }
+
+
+/*
+LAYOUT
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+ul,
+ol {
+    margin-bottom: 1rem;
+}
+
+
+
+nav > ul,
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 20px;
+}
 
 .burger-icon {
-                margin: 0 auto;
-            padding: 1em 20px;
+    margin: 0 auto;
+    padding: 1em 20px;
 }
 
-        header {
-            padding-top: 55px;
-        }
+header {
+    padding-top: 55px;
+}
 
-        main {
-            min-height: 70vh
-        }
+main {
+    min-height: 70vh
+}
 
-        footer {
-            min-height: 30vh;
-        }
+footer {
+    min-height: 30vh;
+}
 
-        nav.mobile-nav {
-            height: 100vh;
-            padding-top: 55px;
-        }
+nav.mobile-nav {
+    height: 100vh;
+    padding-top: 55px;
+}
 
 aside {
-                    padding: 0.5em;
+    padding: 0.5em;
 }
 
 
-        /*
-        NAVIGATION
-        */
+/*
+NAVIGATION
+*/
 
-        nav a {
-            color: #fff;
-        }
+nav a {
+    color: #fff;
+}
 
-        nav.main-nav > ul {
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-        }
+nav.main-nav > ul {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 
-        nav.burger-icon {
-/*            position: fixed;*/
-/*            top: 0;*/
-            display: flex;
-            width: 100%;
-            background: hsla(200, 21%, 13%, 0.8);
-            font-size: 2em;
-            
-        }
+nav.burger-icon {
+    /*            position: fixed;*/
+    /*            top: 0;*/
+    display: flex;
+    width: 100%;
+    background: hsla(200, 21%, 13%, 0.8);
+    font-size: 2em;
 
-
-        nav.burger-icon div {
-            width: 48px;
-            height: 48px;
-        }
-
-        nav.burger-icon a.mobile-nav-open div {
-            background: green;
-        }
-
-        nav.burger-icon a.mobile-nav-close div {
-            background: red;
-        }
+}
 
 
-        nav.mobile-nav a {
-            font-size: 2em
-        }
+nav.burger-icon div {
+    width: 48px;
+    height: 48px;
+}
+
+nav.burger-icon a.mobile-nav-open div {
+    background: green;
+}
+
+nav.burger-icon a.mobile-nav-close div {
+    background: red;
+}
+
+
+nav.mobile-nav a {
+    font-size: 2em
+}
+
+
+/*
+TYPOGRAPHY
+*/
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+/**-----
+Font Sizes
+-----**/
+
+h4,
+main p,
+main ul {
+    font-size: 0.9em;
+}
+
+h2,
+h2.faux-h1,
+h1 {
+    font-size: 3em;
+}
 
 
 
-        /*
-        COLOR & STYLE
-        */
+h3 {
+    font-size: 1.8em;
+}
 
-        body {
-            background: hsl(200, 21%, 13%);
-        }
+/**-----
+Font Weight
+-----**/
 
-        header {
-            background: hsl(200, 21%, 55%);
-        }
+h1,h2.faux-h1,h3,h4 {
+    font-weight: 600
+}
 
-        nav {}
+h2 {
+    font-weight: 100;
+}
 
-        main {
-            background: hsl(200, 5%, 97%);
-        }
 
-        header,
+h3 {
+    text-transform: uppercase;
+}
+
+main ul {
+    padding-left: 1em;
+}
+
+
+/*
+COLOR & STYLE
+*/
+
+body {
+    background: hsl(200, 21%, 13%);
+}
+
+header {
+    background: hsl(200, 21%, 55%);
+}
+
+nav {}
+
+main {
+    background: hsl(200, 5%, 97%);
+}
+
+header,
 aside,
-        footer {
-            color: #fff;
-        }
-
-aside {
- background: hsl(200, 21%, 55%);   
+footer {
+    color: #fff;
 }
 
-        /*
+aside {
+    background: hsl(200, 21%, 55%);
+}
+
+/*
         RESPONSIVE (MOBILE FIRST)
         */
 
-        /*
+/*
 Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweise: Mobile First.
         */
-        @media only screen and (min-width: 580px) {
+@media only screen and (min-width: 580px) {
 
-            nav.main-nav {
-                display: block;
-            }
+    nav.main-nav {
+        display: block;
+    }
 
-            nav.burger-icon,
-            nav.mobile-nav {
-                display: none;
-            }
-
-
-            .nav-bar > ul {
-                list-style-type: none;
-                display: flex;
-                flex-wrap: wrap;
-                grid-gap: 1em;
-            }
-
-            .faux-columns {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .faux-columns > * {
-                width: 50%;
-                padding-right: 16px;
-            }
-
-            .has-sidebar {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .has-sidebar > section {
-                width: 70%;
-                padding-right: 16px;
-            }
-
-            .has-sidebar > aside {
-                width: 30%;
-            }
-
-        }
+    nav.burger-icon,
+    nav.mobile-nav {
+        display: none;
+    }
 
 
+    .nav-bar > ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1em;
+    }
 
-        @media only screen and (min-width: 960px) {
-            .faux-columns > * {
-                width: 33.33%;
-            }
+    .faux-columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-        }
+    .faux-columns > * {
+        width: 50%;
+        padding-right: 16px;
+    }
+    
+    .true-columns {
+        column-count: 2;
+        column-gap: 2em;
+    }
+    
+    /*Verhindert, dass das Element zwischen Spalten umbrochen wird*/
+    .no-break {
+        break-inside: avoid-column;
+    }
 
-        @media only screen and (min-width: 1200px) {
-            .faux-columns > * {
-                width: 25%;
-            }
-            
-                        .has-sidebar > section {
-                width: 80%;
-            }
+    .has-sidebar {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-            .has-sidebar > aside {
-                width: 20%;
-            }
+    .has-sidebar > section {
+        width: 70%;
+        padding-right: 16px;
+    }
 
-        }
+    .has-sidebar > aside {
+        width: 30%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 960px) {
+    .faux-columns > * {
+        width: 33.33%;
+    }
+    
+        .true-columns {
+        column-count: 3;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .faux-columns > * {
+        width: 25%;
+    }
+    
+            .true-columns {
+        column-count: 4;
+    }
+
+
+    .has-sidebar > section {
+        width: 80%;
+    }
+
+    .has-sidebar > aside {
+        width: 20%;
+    }
+
+}
