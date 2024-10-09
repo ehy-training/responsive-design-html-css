@@ -1,6 +1,6 @@
 /*
 Hauptstylesheet
-Schritt 9
+Schritt 10
 */
 
 
@@ -170,7 +170,10 @@ h3 {
 Font Weight
 -----**/
 
-h1,h2.faux-h1,h3,h4 {
+h1,
+h2.faux-h1,
+h3,
+h4 {
     font-weight: 600
 }
 
@@ -188,32 +191,59 @@ main ul {
 }
 
 
-/*
+/*---------------------
 COLOR & STYLE
-*/
+---------------------*/
+
+
+:root {
+    --cool-hue: 200;
+    
+    --color-cool-sub-white: hsl(var(--cool-hue), 21%, 97%);
+    --color-cool-grey-light: hsl(var(--cool-hue), 21%, 89%);
+    --color-cool-grey-mid-light: hsl(var(--cool-hue), 21%, 76%);
+    --color-cool-grey-mid: hsl(var(--cool-hue), 21%, 55%);
+    --color-cool-grey-mid-dark: hsl(var(--cool-hue), 21%, 34%);
+    --color-cool-grey-dark: hsl(var(--cool-hue), 21%, 21%);
+    --color-cool-sub-black: hsl(var(--cool-hue), 21%, 5%);
+    
+    --color-primary: hsl(var(--cool-hue), 97%, 42%);
+    --color-primary-light: hsl(var(--cool-hue), 97%, 76%);
+    --color-primary-dark: hsl(var(--cool-hue), 97%, 34%);
+    
+    --color-accent: hsl(100,97%,55%);
+    
+    --color-type: var(--color-cool-grey-dark);
+}
 
 body {
-    background: hsl(200, 21%, 13%);
+    background: var(--color-cool-grey-dark);
 }
 
 header {
     background: hsl(200, 21%, 55%);
+    background: var(--color-primary-light);
 }
 
-nav {}
+nav a:hover {
+    color: var(--color-accent);
+    
+}
 
 main {
-    background: hsl(200, 5%, 97%);
+    background: var(--color-cool-sub-white);
 }
 
 main > section {
-    border-bottom: 1px solid hsl(200,21%,76%);
+    border-bottom: 1px solid hsl(200, 21%, 76%);
 }
 
 header,
 aside,
 footer {
-    color: #fff;
+    color: var(--color-cool-sub-white);
+    /*    color: rgb(215,215,245);*/
+    /*    color: #fff;*/
 }
 
 aside {
@@ -255,12 +285,12 @@ Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweis
         width: 50%;
         padding-right: 16px;
     }
-    
+
     .true-columns {
         column-count: 2;
         column-gap: 2em;
     }
-    
+
     /*Verhindert, dass das Element zwischen Spalten umbrochen wird*/
     .no-break {
         break-inside: avoid-column;
@@ -288,8 +318,8 @@ Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweis
     .faux-columns > * {
         width: 33.33%;
     }
-    
-        .true-columns {
+
+    .true-columns {
         column-count: 3;
     }
 
@@ -299,8 +329,8 @@ Media Query um den Breakpoint von Mobil auf Tablet zu definieren. Voergehensweis
     .faux-columns > * {
         width: 25%;
     }
-    
-            .true-columns {
+
+    .true-columns {
         column-count: 4;
     }
 
