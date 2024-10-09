@@ -1,6 +1,6 @@
 /*
 Hauptstylesheet
-Schritt 8
+Schritt 9
 */
 
 
@@ -69,6 +69,8 @@ main {
     min-height: 70vh
 }
 
+
+
 footer {
     min-height: 30vh;
 }
@@ -80,6 +82,10 @@ nav.mobile-nav {
 
 aside {
     padding: 0.5em;
+}
+
+main > section {
+    padding-top: 3em !important;
 }
 
 
@@ -132,7 +138,7 @@ TYPOGRAPHY
 
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 300;
     font-size: 15px;
 }
@@ -198,6 +204,10 @@ nav {}
 
 main {
     background: hsl(200, 5%, 97%);
+}
+
+main > section {
+    border-bottom: 1px solid hsl(200,21%,76%);
 }
 
 header,
